@@ -4,12 +4,15 @@ const GRID_HEIGHT = 16;
 
 const generateCellDiv = function() {
     const cellDiv = document.createElement("div");
+    cellDiv.classList.add("gridCell");
     return cellDiv;
 }
 
 // -> { rowDiv, [cellDivs] }
 const generateRow = function() {
     const rowDiv = document.createElement("div");
+    rowDiv.classList.add("gridRow");
+
     const cellDivs = Array(GRID_WIDTH).fill().map(_ => generateCellDiv());
     return {rowDiv, cellDivs};
 }

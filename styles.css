@@ -5,3 +5,30 @@ html {
 *, *::before, *::after {
   box-sizing: inherit;
 }
+
+body {
+  background-color: lightcoral;
+}
+
+.gridContainer {
+  width: 640px;
+  height: 640px;
+  margin: 40px auto;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.gridRow {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+}
+
+.gridCell {
+  flex: 1;
+  margin: -1px -1px -1px -1px;
+
+  border: 2px solid black;
+  background-color: lightcyan;
+}
