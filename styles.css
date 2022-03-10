@@ -10,10 +10,21 @@ body {
   background-color: lightcoral;
 }
 
+.boardContainer {
+  margin: 40px auto;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.buttonContainer {
+  margin: 0 70px 100px 0;
+}
+
 .gridContainer {
   width: 640px;
   height: 640px;
-  margin: 40px auto;
 
   display: flex;
   flex-direction: column;
