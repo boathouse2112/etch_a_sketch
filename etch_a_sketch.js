@@ -2,9 +2,14 @@
 const GRID_WIDTH = 16;
 const GRID_HEIGHT = 16;
 
+const addCellDivHighlight = function(event) {
+    event.target.classList.add("gridCellHighlighted");
+}
+
 const generateCellDiv = function() {
     const cellDiv = document.createElement("div");
     cellDiv.classList.add("gridCell");
+    cellDiv.addEventListener("mouseenter", addCellDivHighlight)
     return cellDiv;
 }
 
